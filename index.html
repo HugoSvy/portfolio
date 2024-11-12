@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Savoye – Projets</title>
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            margin-top: 10%;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            vertical-align: middle; 
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            
+        }
+
+        .status {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        td {
+            height: 50px;
+            
+        }
+
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .status-en-cours .status-indicator {
+            background-color: orange;
+        }
+
+        .status-fini .status-indicator {
+            background-color: green;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hugo Savoye – Portfolio</h1>
+</header>
+
+<main>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Project</th>
+                    <th>About</th>
+                    <th>Demo</th>
+                    <th>GitHub</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="status status-en-cours"><span class="status-indicator"></span></td>
+                    <td>Edgar-Client</td>
+                    <td>plant monitoring app</td>
+                    <td><a target="_blank" href="https://hugosvy.github.io/Edgar-Client/">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/Edgar-Client">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td class="status status-en-cours"><span class="status-indicator"></span></td>
+                    <td>Edgar-Serveur</td>
+                    <td>plant monitoring server</td>
+                    <td><a target="_blank" href="-">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/Edgar-Serveur">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td class="status status-en-cours"><span class="status-indicator"></span></td>
+                    <td>Burger MR</td>
+                    <td>mixed reality burger assistant</td>
+                    <td><a target="_blank" href="-">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/Burger_MR">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td class="status status-fini"><span class="status-indicator"></span></td>
+                    <td>Assistant IA</td>
+                    <td>llm local speech to speech</td>
+                    <td><a target="_blank" href="-">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/AssistantIA-Speech-to-Speech">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td class="status status-fini"><span class="status-indicator"></span></td>
+                    <td>FilmIt</td>
+                    <td>tinder movies</td>
+                    <td><a target="_blank" href="https://hugosvy.github.io/FilmIt-Static/">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/FilmIt">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td class="status status-fini"><span class="status-indicator"></span></td>
+                    <td>TOEIC Hard</td>
+                    <td>toeic flashcards</td>
+                    <td><a target="_blank" href="https://hugosvy.github.io/TOEIC-Hard/">Demo</a></td>
+                    <td><a target="_blank" href="https://github.com/HugoSvy/TOEIC-Hard">GitHub</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>Légende : <span class="status-indicator" style="background-color: orange; display: inline-block; margin-right: 5px;"></span> En cours | <span class="status-indicator" style="background-color: green; display: inline-block; margin-right: 5px;"></span> Fini</p>
+</footer>
+
+</body>
+</html>
